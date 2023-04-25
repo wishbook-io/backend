@@ -1,0 +1,400 @@
+# -*- coding: utf-8 -*-
+from __future__ import unicode_literals
+
+from django.db import migrations, models
+import datetime
+from django.utils.timezone import utc
+
+
+class Migration(migrations.Migration):
+
+    dependencies = [
+        ('api', '0609_auto_20180712_1247'),
+    ]
+
+    operations = [
+        migrations.AddField(
+            model_name='app',
+            name='created',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 10, 59, 33, 115818, tzinfo=utc), auto_now_add=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='app',
+            name='modified',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 10, 59, 35, 942084, tzinfo=utc), auto_now=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='appinstance',
+            name='created',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 10, 59, 39, 227023, tzinfo=utc), auto_now_add=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='appinstance',
+            name='modified',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 10, 59, 41, 171002, tzinfo=utc), auto_now=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='approvedcredit',
+            name='created',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 10, 59, 42, 859585, tzinfo=utc), auto_now_add=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='approvedcredit',
+            name='modified',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 10, 59, 44, 507401, tzinfo=utc), auto_now=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='appversion',
+            name='created',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 10, 59, 45, 924747, tzinfo=utc), auto_now_add=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='appversion',
+            name='modified',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 10, 59, 47, 227520, tzinfo=utc), auto_now=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='attendance',
+            name='created',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 10, 59, 49, 58409, tzinfo=utc), auto_now_add=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='attendance',
+            name='modified',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 10, 59, 50, 603909, tzinfo=utc), auto_now=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='catalogselectionstatus',
+            name='created',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 10, 59, 52, 4082, tzinfo=utc), auto_now_add=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='catalogselectionstatus',
+            name='modified',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 10, 59, 54, 226470, tzinfo=utc), auto_now=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='categorytaxclass',
+            name='created',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 10, 59, 55, 754241, tzinfo=utc), auto_now_add=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='categorytaxclass',
+            name='modified',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 10, 59, 57, 186627, tzinfo=utc), auto_now=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='companyaccount',
+            name='created',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 10, 59, 58, 811308, tzinfo=utc), auto_now_add=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='companyaccount',
+            name='modified',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 0, 0, 498506, tzinfo=utc), auto_now=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='companybankdetails',
+            name='created',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 0, 2, 372148, tzinfo=utc), auto_now_add=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='companybankdetails',
+            name='modified',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 0, 4, 179144, tzinfo=utc), auto_now=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='companycreditaprovedline',
+            name='created',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 0, 5, 693193, tzinfo=utc), auto_now_add=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='companycreditaprovedline',
+            name='modified',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 0, 7, 326373, tzinfo=utc), auto_now=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='companykyctaxation',
+            name='created',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 0, 9, 52376, tzinfo=utc), auto_now_add=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='companykyctaxation',
+            name='modified',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 0, 11, 260546, tzinfo=utc), auto_now=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='companyrating',
+            name='created',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 0, 13, 4913, tzinfo=utc), auto_now_add=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='companyrating',
+            name='modified',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 0, 15, 76799, tzinfo=utc), auto_now=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='config',
+            name='created',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 0, 16, 780770, tzinfo=utc), auto_now_add=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='config',
+            name='modified',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 0, 19, 100709, tzinfo=utc), auto_now=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='creditreference',
+            name='created',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 0, 20, 569679, tzinfo=utc), auto_now_add=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='creditreference',
+            name='modified',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 0, 22, 44603, tzinfo=utc), auto_now=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='discountrule',
+            name='created',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 0, 23, 401612, tzinfo=utc), auto_now_add=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='discountrule',
+            name='modified',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 0, 24, 788071, tzinfo=utc), auto_now=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='invoice',
+            name='created',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 0, 26, 138469, tzinfo=utc), auto_now_add=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='invoice',
+            name='modified',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 0, 27, 506537, tzinfo=utc), auto_now=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='marketing',
+            name='modified',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 0, 28, 913597, tzinfo=utc), auto_now=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='orderrating',
+            name='created',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 0, 30, 801219, tzinfo=utc), auto_now_add=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='orderrating',
+            name='modified',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 0, 32, 347856, tzinfo=utc), auto_now=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='payment',
+            name='created',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 0, 33, 881356, tzinfo=utc), auto_now_add=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='payment',
+            name='modified',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 0, 35, 297020, tzinfo=utc), auto_now=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='pincodezone',
+            name='created',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 0, 36, 876183, tzinfo=utc), auto_now_add=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='pincodezone',
+            name='modified',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 0, 38, 466466, tzinfo=utc), auto_now=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='productstatus',
+            name='created',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 0, 40, 145478, tzinfo=utc), auto_now_add=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='productstatus',
+            name='modified',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 0, 41, 779446, tzinfo=utc), auto_now=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='promotion',
+            name='created',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 0, 43, 268345, tzinfo=utc), auto_now_add=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='promotion',
+            name='modified',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 0, 45, 492274, tzinfo=utc), auto_now=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='promotionaltag',
+            name='created',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 0, 47, 137167, tzinfo=utc), auto_now_add=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='promotionaltag',
+            name='modified',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 0, 48, 713411, tzinfo=utc), auto_now=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='sellerpolicy',
+            name='created',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 0, 50, 489276, tzinfo=utc), auto_now_add=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='sellerpolicy',
+            name='modified',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 0, 53, 347585, tzinfo=utc), auto_now=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='shipment',
+            name='created',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 0, 55, 58719, tzinfo=utc), auto_now_add=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='shipment',
+            name='modified',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 0, 58, 152484, tzinfo=utc), auto_now=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='skumap',
+            name='created',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 0, 59, 586710, tzinfo=utc), auto_now_add=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='skumap',
+            name='modified',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 1, 1, 50746, tzinfo=utc), auto_now=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='solepropreitorshipkyc',
+            name='created',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 1, 3, 632547, tzinfo=utc), auto_now_add=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='solepropreitorshipkyc',
+            name='modified',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 1, 6, 865185, tzinfo=utc), auto_now=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='taxclass',
+            name='created',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 1, 8, 568400, tzinfo=utc), auto_now_add=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='taxclass',
+            name='modified',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 1, 14, 138, tzinfo=utc), auto_now=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='taxcode',
+            name='created',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 1, 19, 682748, tzinfo=utc), auto_now_add=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='taxcode',
+            name='modified',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 1, 21, 520549, tzinfo=utc), auto_now=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='taxtype',
+            name='created',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 1, 22, 985100, tzinfo=utc), auto_now_add=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='taxtype',
+            name='modified',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 1, 24, 432276, tzinfo=utc), auto_now=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='unsubscribednumber',
+            name='created',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 1, 25, 889086, tzinfo=utc), auto_now_add=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='unsubscribednumber',
+            name='modified',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 1, 27, 610298, tzinfo=utc), auto_now=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='userprofile',
+            name='modified',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 1, 29, 359520, tzinfo=utc), auto_now=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='usersavedfilter',
+            name='created',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 1, 31, 7596, tzinfo=utc), auto_now_add=True),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='usersavedfilter',
+            name='modified',
+            field=models.DateTimeField(default=datetime.datetime(2018, 7, 12, 11, 1, 32, 639522, tzinfo=utc), auto_now=True),
+            preserve_default=False,
+        ),
+    ]

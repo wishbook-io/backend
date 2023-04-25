@@ -1,0 +1,60 @@
+{% load i18n %}
+{% blocktrans with site_name=current_site.name site_domain=current_site.domain %}
+<HTML><HEAD><META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW"></HEAD>
+
+<table cellpadding="0" cellspacing="0" border="0" width="585" align="center">
+<tr>
+<td colspan="3" style="border-bottom:1px solid #cccccc !important;padding:0px;margin:0px;">&nbsp;</td>
+</tr>
+<tr>
+<td valign="top" style="border-left:1px solid #cccccc !important;padding:0px;margin:0px;">&nbsp;</td>
+<td valign="top"style="padding:0px;margin:0px;">
+<div style="padding:15px;font-family:'Lucida Grande','Tahoma',Verdana,Arial,Helvetica,sans-serif;color:#000000;font-size:13px;">
+<center><span style="font-size:20px;color:#000000;font-family:'Lucida Grande','Tahoma', Verdana,Arial,Helvetica,sans-serif;font-weight:bold">Thank you for registering on Wishbook</span></center>
+<br/>
+<br/>
+To complete your registration, please click the big green button below.
+<br/>
+<br/>
+<!--By clicking Confirm, you indicate that you have provided this email as a member of {{site_name}}. If this is not the case simply delete this email.-->
+Please click here to confirm your email address
+<br/>
+<br/>
+<br/>
+<span style="display:block;width:555px;text-align:center;margin-left:auto;margin-right:auto;">
+<table cellpadding="10" cellspacing="0" border="0" align="center">
+<tr>
+<td valign="top" bgcolor="#9ef0aa" style="background-color:#9ef0aa;">
+	{% endblocktrans %}
+<a href="{% block reset_link %}{{ current_site.domain }}{% url 'account_confirm_email' key=key %}{% endblock %}" id="confirm_link" style="display:block;font-size:16px;padding:5px 10px 5px 10px;color:#000000;background-color:#9ef0aa;text-decoration:none;">&raquo; Confirm &laquo;</a>
+	{% blocktrans with site_name=current_site.name site_domain=current_site.domain %}
+</td>
+</tr>
+</table>
+</span>
+<br/>
+<br/>
+<!--Be sure to add <a href="mailto:info@{{site_name}}" style="text-decoration:none;font-weight:bold;color:#0068c5;">info@{{site_name}}</a> to your email address book to prevent future emails from landing in your junk or spam folders.-->
+Still have questions? Drop us a mail at <a href="mailto:support@wishbook.io" style="text-decoration:none;font-weight:bold;color:#0068c5;">support@wishbook.io</a>
+<br/>
+<br/>
+Thanks,
+<br/>
+{{site_name}}
+<br/>
+<br/>
+<div style="display:block;text-align:center;">
+<br/>
+<font face="verdana" size="1" color="#444444">This email was sent by: <b>Wishbook Info Services</b>
+<br>604, 21st Century Building, Ring Road, Surat, Gujarat 395002</span><br/><br/>
+</div>
+</div>
+</td>
+<td valign="top" style="border-right:3px solid #cccccc !important;padding:0px;margin:0px;">&nbsp;</td>
+</tr>
+<tr>
+<td colspan="3" style="border-top:3px solid #cccccc !important;padding:0px;margin:0px;">&nbsp;</td>
+</tr>
+</table>
+</HTML>
+{% endblocktrans %}

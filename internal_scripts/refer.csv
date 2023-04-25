@@ -1,0 +1,11 @@
+refer_id,name,photo,shop_number,market_name,street_address,city,state,language,contact_name,phone_number,shop_ownership,product_min_price,product_max_price,est_year,auto_approve_buyer_request,gst_number,created_date
+200000,Kumar Fashion,,I2466,Millennium Textile Market,"Kamela Darwaja, Ring Road,",Surat,Gujarat,3,,9824172261,Y,0,0,0,0,,2017-01-11 08:46:57
+200002,Jain Tex,,B1,Metro Tower,Ring Road,Surat,Gujarat,3,Ravi Jain,9238780777,Y,350,800,1996,0,,2017-01-11 08:46:57
+200003,Mehul Silk Mills,,1002#,Sai Krupa Market,,Surat,Gujarat,1,,9428058951,,,,,0,,2017-01-11 08:46:57
+293301,Ratanmani NX,,2081,Abhinandan Market,Ring Road,Surat,Gujarat,1,rahul jain,9909438365,N,250,275,2014,0,,2017-02-12 07:58:21
+200007,Arihant Designer,,I10#,New TT,"Salasar Hanuman Marg, Ring Road",Surat,Gujarat,1,,9376833763,Y,200,3000,2006,0,,2017-01-11 08:46:57
+200008,Apparel Store,,2020-2025,Padmavati Textile Market,Near Sahara Darwaja,Surat,Gujarat,1,Kishan,9601768979,Y,140,1500,2015,0,,2017-01-11 08:46:57
+200009,Resham Creation,,3031,Rohit,Ring Road,Surat,Gujarat,1,Pankaj,7878843886,Y,0,0,0,0,,2017-01-11 08:46:57
+200010,Vani Sarees,,506,Ashoka Tower,"Salasar Hanuman Marg, Ring Road",Surat,Gujarat,3,Ramesh Jain,9427333171,N,250,550,2007,0,,2017-01-11 08:46:57
+200011,Vijay Moti Prints,,L75#,Radhey,"Salasar Hanuman Marg, Ring Road",Surat,Gujarat,1,,9978264644,,,,,0,,2017-01-11 08:46:57
+200012,Shanti Creations ,,A1055#,Abhishek,"Salasar Hanuman Marg, Ring Road",Surat,Gujarat,1,,9979452851,,,,,0,,2017-01-11 08:46:57

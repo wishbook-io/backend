@@ -1,0 +1,32 @@
+from django.contrib.auth.models import User
+from autofixture import AutoFixture
+fixture = AutoFixture(User)
+entries = fixture.create(30)
+
+python manage.py loadtestdata api.User_Number:35
+python manage.py loadtestdata api.Company:5
+python manage.py loadtestdata api.Company_User:30
+python manage.py loadtestdata api.ChoiceList:50
+python manage.py loadtestdata api.ChoiceList_User:50
+python manage.py loadtestdata api.Buyer:100
+python manage.py loadtestdata api.Brand:15
+python manage.py loadtestdata api.Catalog:30
+python manage.py loadtestdata api.Sales_Order:100
+python manage.py loadtestdata api.Product:50
+python manage.py loadtestdata api.Sales_Order_Item:100
+python manage.py loadtestdata api.Selection:50
+python manage.py loadtestdata api.Selection_Product:100
+python manage.py loadtestdata api.Channel_type:20
+python manage.py loadtestdata api.Channel:30
+python manage.py loadtestdata api.Push:100
+python manage.py loadtestdata api.Push_User:50
+python manage.py loadtestdata api.Push_Result:50
+python manage.py loadtestdata api.Push_Catalog:50
+python manage.py loadtestdata api.Push_Product:50
+python manage.py loadtestdata api.Export:50
+python manage.py loadtestdata api.Export_Result:50
+python manage.py loadtestdata api.Export_Catalog:50
+python manage.py loadtestdata api.Export_Product:50
+python manage.py loadtestdata api.Invite:20
+python manage.py loadtestdata api.Invitee:100
+python manage.py loadtestdata api.Message:50
